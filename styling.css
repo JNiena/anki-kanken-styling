@@ -1,0 +1,82 @@
+:root {
+    --accent-color: #89b4fa;
+    --text-primary-color: #cdd6f4;
+    --text-secondary-color: #bac2de;
+
+    --mantle-color: #181825;
+    --crust-color: #11111b;
+
+    --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+.card {
+    font-family: "Hiragino Maru Gothic ProN";
+    text-align: center;
+
+    margin: 5% 30% 5% 30%;
+}
+
+#level {
+    font-size: 15px;
+    color: var(--text-secondary-color);
+    background: var(--mantle-color);
+
+    padding-top: 5px;
+    margin: 0 0 -15px 0;
+
+    border-radius: 10px 10px 0 0;
+}
+
+#sentence {
+    font-size: 30px;
+    color: var(--text-primary-color);
+    background: var(--mantle-color);
+
+    padding: 10px;
+
+    text-align: center;
+
+    border-bottom: 5px solid var(--accent-color);
+    border-radius: 0 0 10px 10px;
+
+    box-shadow: 0 4px 4px -4px var(--accent-color);
+}
+
+#meaning {
+    font-size: 20px;
+    color: var(--text-secondary-color);
+
+    padding: 10px 0 10px 0;
+
+    text-align: left;
+    display: inline-block;
+}
+
+#diagram {
+    background: var(--mantle-color);
+
+    padding: 10px;
+
+    border-left: 5px solid var(--accent-color);
+    border-radius: 5px;
+
+    box-shadow: 4px 4px 4px var(--shadow-color);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+#diagram img {
+    background: var(--crust-color);
+    border-radius: 20px;
+}
+
+#audio {
+    display: none;
+}
+
+u {
+    color: var(--accent-color);
+    text-decoration: none;
+}

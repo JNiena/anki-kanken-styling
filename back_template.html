@@ -1,0 +1,21 @@
+<div id="level"><b>漢字検定</b>: {{Level}}</div>
+<div id="sentence">{{SentenceBack}}</div>
+<div id="meaning">{{Meaning}}</div>
+<div id="diagram">{{Diagram}}</div>
+
+<script>
+    var diagramDiv = document.getElementById("diagram");
+    var diagramImages = diagramDiv.getElementsByTagName("img");
+
+    var columns = [];
+    for (let i = 0; i < diagramImages.length; i++) {
+        columns.push("1fr");
+    }
+
+    diagramDiv.style.gridTemplateColumns = columns.join(" ");
+
+    if (diagramImages.length === 1) {
+        diagramDiv.style.display = "block";
+    }
+
+</script>
