@@ -72,6 +72,22 @@
     border-radius: 20px;
 }
 
+#picture {
+    background: var(--mantle-color);
+
+    padding: 10px;
+
+    border-left: 5px solid var(--accent-color);
+    border-radius: 5px;
+
+    box-shadow: 4px 4px 4px var(--shadow-color);
+}
+
+#picture img {
+    background: var(--crust-color);
+    border-radius: 20px;
+}
+
 #audio {
     display: none;
 }
