@@ -1,4 +1,13 @@
 <div id="level" style="visibility: hidden;">Kanken Level: {{Level}}</div>
 <div id="sentence" style="border-radius: 10px;">{{SentenceFront}}</div>
 <div id="meaning" style="visibility: hidden;">{{Meaning}}</div>
-<div id="diagram" style="visibility: hidden;">{{Diagram}}</div>
+<div id="picture">{{Picture}}</div>
+
+<script>
+    var pictureDiv = document.getElementById("picture");
+    var pictureImages = pictureDiv.getElementsByTagName("img");
+
+    if (pictureImages.length < 1) {
+        pictureDiv.style.visibility = "hidden";
+    }
+</script>
