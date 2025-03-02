@@ -1,16 +1,18 @@
-## Styling for [Quizmaster's Kanken Deck](https://ankiweb.net/shared/info/759825185).
+## Styling for [Yomitan](https://yomitan.wiki/).
 
-### Front of Card:
+### Light Mode:
 
-![](front_example.png)
+![](light_mode.png)
 
-### Back of Card:
+### Dark Mode:
 
-![](back_example.png)
+![](dark_mode.png)
 
-### Fields Required:
-- Level
-- SentenceFront
-- SentenceBack
-- Meaning
-- Diagram
+### Dictionaries Used:
+- 明鏡国語辞典
+- 岩波国語辞
+- 旺文社国語辞典
+- 三省堂国語辞典
+- 新選国語辞典
+- 漢検漢字辞典
+- 新明解国語辞典
