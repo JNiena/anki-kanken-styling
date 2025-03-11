@@ -1,120 +1,112 @@
 :root {
-    --accent-color: #89b4fa;
-    --text-primary-color: #cdd6f4;
-    --text-secondary-color: #bac2de;
-
-    --mantle-color: #181825;
-    --crust-color: #11111b;
-
-    --shadow-color: rgba(0, 0, 0, 0.5);
+	--accent-color: #d20f39;
+	--text-primary-color: #eff1f5;
+	--text-secondary-color: #ccd0da;
+	--mantle-color: #181825;
+	--crust-color: #11111b;
+	--shadow-color: rgba(0, 0, 0, 0.5);
+	--gyousho-font: "DFGyoSho Pro-5";
+	--kyoukasho-font: "DFKyoKaSho Pro-5";
+	--kaisho-font: "DFKaiSho Pro-5 W5";
+	--english-font: "serif";
 }
 
-.card {
-    font-family: "Hiragino Maru Gothic ProN";
-    
-    margin: 5% 20% 5% 20%;
-
-    text-align: center;
+#main {
+	margin: 0 5% 0 5%;
+	text-align: center;
 }
 
 #level {
-    font-size: 3vw;
-
-    color: var(--text-secondary-color);
-    background: var(--mantle-color);
-
-    padding: 0.5rem 0 0 0;
-    margin: 0.25rem 0.25rem -0.75rem 0.25rem;
-
-    border-radius: 1rem 1rem 0 0;
+	font-family: var(--kaisho-font);
+	font-size: 2rem;
+	color: var(--text-secondary-color);
+	text-align: right;
 }
 
 #sentence {
-    font-size: 2vw;
+	font-family: var(--kaisho-font);
+	font-size: 2.5rem;
+	color: var(--text-primary-color);
+	vertical-align: middle;
+	text-align: left;
+	display: inline-block;
+}
 
-    color: var(--text-primary-color);
-    background: var(--mantle-color);
-
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    margin: 0.25rem 0.25rem 0.25rem 0.25rem;
-
-    border-bottom: 0.5rem solid var(--accent-color);
-    border-radius: 0 0 1rem 1rem;
-
-    box-shadow: 0 0.5rem 0.5rem -0.5rem var(--accent-color);
-
-    text-align: center;
+#term {
+	background: var(--background-color);
+	border-radius: 1rem;
+	border-top: 1rem solid var(--accent-color);
+	box-shadow: 1rem 1rem 1rem var(--shadow-color);
+	padding: 1rem;
 }
 
 #meaning {
-    font-size: 2.5vw;
-
-    color: var(--text-secondary-color);
-
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-    margin: 0.25rem 0.25rem 0.25rem 0.25rem;
-
-    text-align: center;
+	font-family: var(--kaisho-font);
+	font-size: 2rem;
+	color: var(--text-secondary-color);
+	padding: 1rem;
 }
 
 #diagram {
-    background: var(--mantle-color);
-
-    padding: 1rem 1rem 1rem 1rem;
-    margin: 0.25rem 0.25rem 0.25rem 0.25rem;
-
-    border-left: 0.5rem solid var(--accent-color);
-    border-radius: 0.5rem;
-
-    box-shadow: 0.5rem 0.5rem 0.5rem var(--shadow-color);
-
-    place-items: center;
-
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-}
-
-#diagram img {
-    background: var(--crust-color);
-
-    border-radius: 1rem;
-
-    width: 100%;
-    height: 100%;
+	background: var(--mantle-color);
+	border-radius: 1rem;
+	border-left: 1rem solid
+		color-mix(in srgb, var(--accent-color) 66%, var(--text-primary-color));
+	box-shadow: 1rem 1rem 1rem var(--shadow-color);
+	padding: 1rem;
+	justify-content: center;
+	gap: 1rem;
+	display: flex;
 }
 
 #picture {
-    background: var(--mantle-color);
+	background: var(--mantle-color);
+	border-radius: 1rem;
+	border-left: 1rem solid
+		color-mix(in srgb, var(--accent-color) 50%, var(--text-primary-color));
+	box-shadow: 1rem 1rem 1rem var(--shadow-color);
+	padding: 1rem;
+	justify-content: center;
+	gap: 1rem;
+	display: flex;
+}
 
-    padding: 1rem 1rem 1rem 1rem;
-    margin: 0.25rem 0.25rem 0.25rem 0.25rem;
+#empty-diagram {
+	background: var(--mantle-color);
+	border-radius: 1rem;
+	border-left: 1rem solid
+		color-mix(in srgb, var(--accent-color) 33%, var(--text-primary-color));
+	box-shadow: 1rem 1rem 1rem var(--shadow-color);
+	padding: 1rem;
+	justify-content: center;
+	gap: 1rem;
+	display: flex;
+}
 
-    border-left: 0.5rem solid var(--accent-color);
-    border-radius: 0.5rem;
-
-    box-shadow: 0.5rem 0.5rem 0.5rem var(--shadow-color);
-
-    place-items: center;
+#diagram img {
+	background: var(--crust-color);
+	border-radius: 1rem;
+	display: block;
 }
 
 #picture img {
-    background: var(--crust-color);
+	background: var(--crust-color);
+	border-radius: 1rem;
+	display: block;
+}
 
-    border-radius: 1rem;
-
-    width: 100%;
-    height: 100%;
-
-    display: block;
+#empty-diagram img {
+	background: var(--crust-color);
+	object-position: -99999px 99999px;
+	border-radius: 1rem;
+	display: block;
 }
 
 #audio {
-    display: none;
+	display: none;
 }
 
 u {
-    color: var(--accent-color);
-
-    text-decoration: none;
+	color: var(--accent-color);
+	text-decoration: none;
 }
